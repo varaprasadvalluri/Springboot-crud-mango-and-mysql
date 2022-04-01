@@ -1,0 +1,24 @@
+logging:
+  level:
+    com:
+      assignment:
+        springboot:
+          mongo: DEBUG
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss} - %msg%n'
+server:
+  port: 8080
+spring:
+  data:
+    mongodb:
+      database: testvara
+      host: localhost
+      port: 27017
+  datasource:
+    password: ''
+    url: jdbc:mysql://localhost:3306/vara
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: create
+      use-new-id-generator-mappings: false
